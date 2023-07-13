@@ -30,7 +30,6 @@ let member1 : Member = {
 }
 
 
-
 const App : React.FC = () => {
 
   const [member, SetMember] = useState<Member>(member1)
@@ -39,7 +38,7 @@ const App : React.FC = () => {
     SetMember({...member, address:address})
     return true;
   }
-  
+
   return (
     <div className="App">
       <header className="App-header">
