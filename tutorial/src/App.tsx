@@ -9,6 +9,8 @@ import { Button } from './components/Button';
 import { Input } from './components/Input';
 import { Container } from './components/Container';
 import { Name, NameType } from './components/Name';
+import { LoginState } from './state/LoginState';
+import { User } from './state/User';
 
 function App() {
   const clickHandler = (event:React.MouseEvent, id:number) => {
@@ -34,6 +36,8 @@ function App() {
       }}></Input>
       <Container styles={ {border : '1px solid black', margin : '10px 20px 10px 20px', backgroundColor : 'beige'} }></Container>
       <Name names={studentNames}></Name>
+      <LoginState></LoginState>
+      <User></User>
     </div>
   );
 }
