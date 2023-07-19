@@ -12,7 +12,7 @@ import { Name, NameType } from './components/Name';
 import { LoginState } from './state/LoginState';
 import { User } from './state/User';
 import { CounterWithReducer } from './state/CounterWithReducer';
-import { Counter } from './class/Counter';
+import { CounterComponent } from './class/CounterComponent';
 
 function App() {
   const clickHandler = (event:React.MouseEvent, id:number) => {
@@ -41,7 +41,7 @@ function App() {
       <LoginState></LoginState>
       <User></User>
       <CounterWithReducer></CounterWithReducer>
-      <Counter message="Hello"></Counter>
+      <CounterComponent message="Hello"></CounterComponent>
     </div>
   );
 }

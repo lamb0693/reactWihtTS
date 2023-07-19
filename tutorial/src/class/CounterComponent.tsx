@@ -8,7 +8,7 @@ type countetStatus = {
     count : number
 }
 
-export class Counter extends Component<propsType, countetStatus>{
+export class CounterComponent extends Component<propsType, countetStatus>{
     state = {
         count : 0
     }
